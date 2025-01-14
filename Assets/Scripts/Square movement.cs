@@ -15,11 +15,16 @@ public class Squaremovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        if (Input.GetKey(KeyCode.Escape)) ;
+
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up);
         if (hit)
         {
