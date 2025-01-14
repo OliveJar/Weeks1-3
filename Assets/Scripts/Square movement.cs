@@ -40,7 +40,6 @@ public class Squaremovement : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
 
-
         if(Input.GetKey(KeyCode.A))
         {
             rb.AddForce(Vector2.left, ForceMode2D.Force);
