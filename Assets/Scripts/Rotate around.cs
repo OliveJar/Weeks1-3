@@ -1,15 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class SunandMoon : MonoBehaviour
+public class Rotatearound : MonoBehaviour
 {
     [SerializeField]
-    private GameObject SunMoon;
-
-    public float rotationSpeed = 3f;
-
+    private Transform Rotatepoint;
+    public float rotatespeed = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +16,6 @@ public class SunandMoon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SunMoon.transform.Rotate(0, 0, rotationSpeed * Time.deltaTime, Space.Self);
+        transform.RotateAround(Rotatepoint.transform.position, Vector3.back, rotatespeed * Time.deltaTime);
     }
 }
