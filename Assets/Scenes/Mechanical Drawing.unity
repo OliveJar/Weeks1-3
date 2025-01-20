@@ -1583,54 +1583,39 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.86785936
-      value: 220.77861
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+      time: 0
+      value: 492.3036
+      inSlope: 0.9263353
+      outSlope: 0.9263353
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.33333334
     - serializedVersion: 3
-      time: 312.74908
-      value: 312.44238
-      inSlope: 0.5581995
-      outSlope: 0.5581995
+      time: 1004.1914
+      value: 1422.5215
+      inSlope: 1.2162077
+      outSlope: 1.2162077
       tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.13370703
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2015.2534
+      value: 2807.456
+      inSlope: 1.369782
+      outSlope: 1.369782
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.24879976
-    - serializedVersion: 3
-      time: 622.24304
-      value: 549.3093
-      inSlope: 1.0162668
-      outSlope: 1.0162668
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.17961967
-      outWeight: 0.17309532
-    - serializedVersion: 3
-      time: 999.5461
-      value: 1188.4268
-      inSlope: 1.8328383
-      outSlope: 1.8328383
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.10697243
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1499.6266
-      value: 1942.6696
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  response: 0.5
   rotatespeed1: 0
+  usingMouse: 1
+  usingController: 0
 --- !u!1 &1214531095
 GameObject:
   m_ObjectHideFlags: 0
