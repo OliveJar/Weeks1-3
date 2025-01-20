@@ -6,17 +6,20 @@ public class SpinCrankShaft : MonoBehaviour
 {
     [SerializeField]
     private Transform Rotatepoint;
-    [Range(0, -1000)]
-    public float rotatespeed;
+    public AnimationCurve curve;
+
+    [Range(0, 1000)]
+    public float rotatespeed1;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        rotatespeed1 = 100;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.RotateAround(Rotatepoint.transform.position, Vector3.back, rotatespeed * Time.deltaTime);
+        transform.RotateAround(Rotatepoint.transform.position, Vector3.back, curve.Evaluate(rotatespeed1) * Time.deltaTime);
     }
 }
