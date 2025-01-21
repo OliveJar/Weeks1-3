@@ -20,6 +20,5 @@ public class SpinConrod : MonoBehaviour
         Vector3 target = new Vector3 (Target.transform.position.x, Target.transform.position.y, 0);
         Vector2 direction = target - transform.position;
         transform.up = direction;
-
     }
 }
