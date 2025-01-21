@@ -16,8 +16,6 @@ public class PistonHead : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.position.x = 0;
-        //transform.position = Rotatepoint2.transform.position;
         transform.position = new Vector2(-0.7055448f, (Rotatepoint2.transform.position.y) + 2.444462f);
     }
 }

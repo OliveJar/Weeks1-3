@@ -7,8 +7,6 @@ public class SpinConrod : MonoBehaviour
     [SerializeField]
     private Transform Target;
     public float speed = 1.0f;
-    [SerializeField]
-    private Transform piston;
 
     // Start is called before the first frame update
     void Start()
