@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class PistonHead : MonoBehaviour
 {
+    //Declare all variables
     [SerializeField]
+    //Gets the location of the crankpin journals (the point of connection of the connecting rod and the crankshaft)
     private Transform Rotatepoint2;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        //transform.position.x = 0;
-        //transform.position = Rotatepoint2.transform.position;
+        //Makes the piston move up and down according to the position of the crankpin journals
         transform.position = new Vector2(-0.7055448f, (Rotatepoint2.transform.position.y) + 2.444462f);
     }
 }
