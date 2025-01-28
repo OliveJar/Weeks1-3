@@ -21,9 +21,9 @@ public class SpinCrankShaft : MonoBehaviour
     public float rotatespeed1;
     [Header("Controls")]
     //Mouse input boolean
-    public bool usingMouse;
+    public static bool usingMouse = true;
     //Controller input boolean
-    public bool usingController;
+    public static bool usingController = false;
 
     // Start is called before the first frame update
     void Start()
@@ -55,12 +55,11 @@ public class SpinCrankShaft : MonoBehaviour
 
         //--------------------------------------------CONTROLS--------------------------------------------\\
 
+        
+
         //If the mouse is being used use mouse inputs
         if(usingMouse)
         {
-            //Disable controller inputs
-            usingController = false;
-
             //Track the mouse position according to the position of the camera
             Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             //Lerp the mouse y postiton using the basic interpolation value and change the rotation speed accordingly
@@ -77,9 +76,6 @@ public class SpinCrankShaft : MonoBehaviour
         //If a controller is being used then use controller inputs
         if (usingController)
         {
-            //Dissable mouse inputs
-            usingMouse = false;
-
             //Lerp the controller's right trigger input and change the rotation speed accordingly
             rotatespeed1 = Mathf.Lerp(1, (Mathf.Clamp((Input.GetAxis("Mouse Y") * 10000), 1, 1000)), t);
 
